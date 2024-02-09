@@ -1,0 +1,35 @@
+[book]
+authors = ["Allen D. Ball"]
+language = "en"
+multilingual = false
+src = "src"
+title = "MediZues Vanta Documentation"
+
+[preprocessor]
+
+[preprocessor.admonish]
+command = "mdbook-admonish"
+assets_version = "3.0.2" # do not edit: managed by `mdbook-admonish install`
+
+[preprocessor.chapter-number]
+renderer = ["html"]
+
+[preprocessor.mermaid]
+command = "mdbook-mermaid"
+
+[preprocessor.toc]
+command = "mdbook-toc"
+renderer = ["html"]
+
+[output]
+
+[output.html]
+enable = true
+git-repository-url = "https://github.com/Zues-Software-Inc/medizues-vanta-documentation.git"
+additional-js = ["mermaid.min.js", "mermaid-init.js"]
+additional-css = ["./mdbook-admonish.css"]
+
+[output.html.print]
+enable = true
+
+[output.linkcheck]
