@@ -1,3 +1,3 @@
 # Summary
 
-- [Intrusion detection system installation](intrusion-detection-system-installation.md)
+- [Intrusion Detection System Installation](intrusion-detection-system-installation.md)
