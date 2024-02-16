@@ -16,3 +16,4 @@
 - [Tabletop Disaster Recovery Exercise](tabletop-disaster-recovery-exercise.md)
 
 - [Incident report or root cause analysis](incident-report-or-root-cause-analysis.md)
+- [Test of incident response plan](test-of-incident-response-plan.md)
