@@ -47,4 +47,4 @@ jobs:
         if: ${{ github.ref == 'refs/heads/trunk' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./book
+          publish_dir: ./book/html
