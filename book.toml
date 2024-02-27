@@ -11,8 +11,8 @@ title = "MediZues Vanta Documentation"
 command = "mdbook-admonish"
 assets_version = "3.0.2" # do not edit: managed by `mdbook-admonish install`
 
-[preprocessor.chapter-number]
-renderer = ["html"]
+#[preprocessor.chapter-number]
+#renderer = ["html"]
 
 [preprocessor.mermaid]
 command = "mdbook-mermaid"
