@@ -5,6 +5,7 @@
   - [Network Diagram](network-diagram.md)
   - [Network Segregation](network-segregation.md)
   - [Application Access Request Denied Log](application-access-request-denied-log.md)
+  - [Data Restore Test](data-restore-test.md)
 
 - [Documents: Policy]()
   - [Incident report or root cause analysis](incident-report-or-root-cause-analysis.md)
@@ -19,7 +20,6 @@
 
 - [Documents: Engineering]()
   - [Application Session Timeout](application-session-timeout.md)
-  - [Data Restore Test](data-restore-test.md)
   - [Enabled Automated Log Alerting](enabled-automated-log-alerting.md)
   - [Penetration Test Remediation](penetration-test-remediation.md)
   - [Penetration Test Report](penetration-test-report.md)
