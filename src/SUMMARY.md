@@ -6,6 +6,7 @@
   - [Network Segregation](network-segregation.md)
   - [Application Access Request Denied Log](application-access-request-denied-log.md)
   - [Data Restore Test](data-restore-test.md)
+  - [Tabletop Disaster Recovery Exercise](tabletop-disaster-recovery-exercise.md)
 
 - [Documents: Policy]()
   - [Incident report or root cause analysis](incident-report-or-root-cause-analysis.md)
@@ -24,4 +25,3 @@
   - [Penetration Test Remediation](penetration-test-remediation.md)
   - [Penetration Test Report](penetration-test-report.md)
   - [System Description (Section III)](system-description.md)
-  - [Tabletop Disaster Recovery Exercise](tabletop-disaster-recovery-exercise.md)
