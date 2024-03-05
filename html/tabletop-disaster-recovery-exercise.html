@@ -89,7 +89,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><div><strong aria-hidden="true">1.</strong> Documents: Engineering</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="intrusion-detection-system-installation.html"><strong aria-hidden="true">1.1.</strong> Intrusion Detection System Installation</a></li><li class="chapter-item expanded "><a href="network-diagram.html"><strong aria-hidden="true">1.2.</strong> Network Diagram</a></li><li class="chapter-item expanded "><a href="network-segregation.html"><strong aria-hidden="true">1.3.</strong> Network Segregation</a></li><li class="chapter-item expanded "><a href="application-access-request-denied-log.html"><strong aria-hidden="true">1.4.</strong> Application Access Request Denied Log</a></li><li class="chapter-item expanded "><a href="data-restore-test.html"><strong aria-hidden="true">1.5.</strong> Data Restore Test</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> Documents: Policy</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="incident-report-or-root-cause-analysis.html"><strong aria-hidden="true">2.1.</strong> Incident report or root cause analysis</a></li><li class="chapter-item expanded "><a href="test-of-incident-response-plan.html"><strong aria-hidden="true">2.2.</strong> Test of incident response plan</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><li class="part-title">To-Do</li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Documents: Human resources</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="proof-of-completed-access-review.html"><strong aria-hidden="true">3.1.</strong> Proof of completed access review</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> Documents: Engineering</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="application-session-timeout.html"><strong aria-hidden="true">4.1.</strong> Application Session Timeout</a></li><li class="chapter-item expanded "><a href="enabled-automated-log-alerting.html"><strong aria-hidden="true">4.2.</strong> Enabled Automated Log Alerting</a></li><li class="chapter-item expanded "><a href="penetration-test-remediation.html"><strong aria-hidden="true">4.3.</strong> Penetration Test Remediation</a></li><li class="chapter-item expanded "><a href="penetration-test-report.html"><strong aria-hidden="true">4.4.</strong> Penetration Test Report</a></li><li class="chapter-item expanded "><a href="system-description.html"><strong aria-hidden="true">4.5.</strong> System Description (Section III)</a></li><li class="chapter-item expanded "><a href="tabletop-disaster-recovery-exercise.html" class="active"><strong aria-hidden="true">4.6.</strong> Tabletop Disaster Recovery Exercise</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><div><strong aria-hidden="true">1.</strong> Documents: Engineering</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="intrusion-detection-system-installation.html"><strong aria-hidden="true">1.1.</strong> Intrusion Detection System Installation</a></li><li class="chapter-item expanded "><a href="network-diagram.html"><strong aria-hidden="true">1.2.</strong> Network Diagram</a></li><li class="chapter-item expanded "><a href="network-segregation.html"><strong aria-hidden="true">1.3.</strong> Network Segregation</a></li><li class="chapter-item expanded "><a href="application-access-request-denied-log.html"><strong aria-hidden="true">1.4.</strong> Application Access Request Denied Log</a></li><li class="chapter-item expanded "><a href="data-restore-test.html"><strong aria-hidden="true">1.5.</strong> Data Restore Test</a></li><li class="chapter-item expanded "><a href="tabletop-disaster-recovery-exercise.html" class="active"><strong aria-hidden="true">1.6.</strong> Tabletop Disaster Recovery Exercise</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> Documents: Policy</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="incident-report-or-root-cause-analysis.html"><strong aria-hidden="true">2.1.</strong> Incident report or root cause analysis</a></li><li class="chapter-item expanded "><a href="test-of-incident-response-plan.html"><strong aria-hidden="true">2.2.</strong> Test of incident response plan</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><li class="part-title">To-Do</li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Documents: Human resources</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="proof-of-completed-access-review.html"><strong aria-hidden="true">3.1.</strong> Proof of completed access review</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> Documents: Engineering</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="application-session-timeout.html"><strong aria-hidden="true">4.1.</strong> Application Session Timeout</a></li><li class="chapter-item expanded "><a href="enabled-automated-log-alerting.html"><strong aria-hidden="true">4.2.</strong> Enabled Automated Log Alerting</a></li><li class="chapter-item expanded "><a href="penetration-test-remediation.html"><strong aria-hidden="true">4.3.</strong> Penetration Test Remediation</a></li><li class="chapter-item expanded "><a href="penetration-test-report.html"><strong aria-hidden="true">4.4.</strong> Penetration Test Report</a></li><li class="chapter-item expanded "><a href="system-description.html"><strong aria-hidden="true">4.5.</strong> System Description (Section III)</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -178,15 +178,125 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="tabletop-disaster-recovery-exercise"><a class="header" href="#tabletop-disaster-recovery-exercise">Tabletop Disaster Recovery Exercise</a></h1>
+<h2 id="introduction"><a class="header" href="#introduction">Introduction</a></h2>
+<p>On February 29th, 2024 Allen Ball and Evan McGuffie participated in a Table
+Top Disaster Recovery Exercise summarized in this document.</p>
+<h2 id="scenario"><a class="header" href="#scenario">Scenario</a></h2>
+<p>After a routine application update, users report that they cannot either login
+to their MediZues application accounts or, if they can login, that their CRM
+and program data are inconsistent.</p>
+<p>It is quickly discovered that a <code>git</code> commit with "hardwired" MongoDB Atlas
+development credentials was inadvertently included in the last production push
+causing producton to use the development environment for some database
+actions.</p>
+<h2 id="response"><a class="header" href="#response">Response</a></h2>
+<p>The head of DevOps, Allen Ball, has the authority to activate the Business
+Continuity and Disaster Recovery Plan.  The Plan may be activated as a result
+of an escalation to any executive management.</p>
+<p>The incident response consists of the following high-level steps:</p>
+<ol>
+<li>
+<p>Take the site offline</p>
+</li>
+<li>
+<p>Rollback to a known good state</p>
+</li>
+<li>
+<p>Postmortem</p>
+</li>
+<li>
+<p>Re-apply application update</p>
+</li>
+<li>
+<p>Continuous improvement</p>
+</li>
+</ol>
+<p>A single DevOps engineer can complete steps #1 and #2.  The site is taken
+offline by removing the CNAME records for app.medizues.com and
+adm.medizues.com.<sup class="footnote-reference"><a href="#1">1</a></sup></p>
+<p>Rolling back to a known good state requires both restoring the production
+Atlas MongoDB database to the last back-up before the update and restoring the
+application on the EC2 instances.  The database restore is run from the Atlas
+web app:</p>
+<p><img src="tabletop-disaster-recovery-exercise/screenshot-1.png" alt="" /></p>
+<p>As far as restoring the application code and EC2 instances, the DevOps
+engineer may either rely on AWS Backup to restore the back-ups or rebuild
+using the Ansible IaC maintained in
+<a href="https://github.com/Zues-Software-Inc/medizues-cloud">https://github.com/Zues-Software-Inc/medizues-cloud</a>.  For this exercise,
+rebuilding from IaC is the expedient choice.</p>
+<p>The incident "postmortem" includes:</p>
+<ul>
+<li>
+<p>Failure in process in that peer review did not prevent adding the "debug"
+code to the production branch</p>
+</li>
+<li>
+<p>The application could be improved to detect database misconfiguraton and
+"fail fast" at deployment</p>
+</li>
+</ul>
+<p>Outside the incident response but still critical is to take the above
+"postmortem" and re-apply the application update.</p>
+<p>Finally, staff will execute on the findings for continuous improvement.</p>
+<h2 id="findings"><a class="header" href="#findings">Findings</a></h2>
+<p>Summary of findings:</p>
+<ul>
+<li>
+<p>The MediZues app needs a static "under maintenance" web site that may be set
+as the target of app.medizues.com and adm.medizues.com during incidents</p>
+</li>
+<li>
+<p>GitHub checks such as scanning for credentials happen asynchronously; these
+checks should be run before deploying code to production</p>
+</li>
+<li>
+<p>Peer review processes should include synchronous tools for credential scans
+and other security checks</p>
+</li>
+</ul>
+<h2 id="debriefhotwash-questions"><a class="header" href="#debriefhotwash-questions">Debrief/Hotwash Questions</a></h2>
+<p>An after action report identifying strengths and areas where improvements
+might be made will be provided after the exercise. The following questions are
+designed to obtain input into the after action report from participants.</p>
+<blockquote>
+<p>Are there any other issues you would like to discuss that were not raised?</p>
+</blockquote>
+<p>[Allen] None</p>
+<blockquote>
+<p>What are the strengths of the contingency plan? What areas require closer
+examination?</p>
+</blockquote>
+<p>[Allen] Our plan is robust for system recovery with multiply back-up and
+restore strategies.  However, we need to improve communications to the user
+base during an incident.</p>
+<blockquote>
+<p>Was the exercise beneficial? Did it help prepare you for follow-up testing?</p>
+</blockquote>
+<p>[Allen] Yes</p>
+<blockquote>
+<p>What did you gain from the exercise?</p>
+</blockquote>
+<p>[Allen] Highlighting the gap in not notifying users during maintenance events.</p>
+<blockquote>
+<p>How can we improve future exercises and tests?</p>
+</blockquote>
+<p>[Allen] Examine other types of disasters such as DDoS attacks.</p>
+<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+<p>This process may be improved by creating a static website that will
+inform MediZues users that the site is under maintenance.</p>
+</div>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="system-description.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="data-restore-test.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
+                            <a rel="next prefetch" href="incident-report-or-root-cause-analysis.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
 
                         <div style="clear: both"></div>
                     </nav>
@@ -194,10 +304,13 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="system-description.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="data-restore-test.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
+                    <a rel="next prefetch" href="incident-report-or-root-cause-analysis.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
             </nav>
 
         </div>
