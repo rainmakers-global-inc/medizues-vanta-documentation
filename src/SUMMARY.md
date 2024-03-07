@@ -24,4 +24,3 @@
   - [Enabled Automated Log Alerting](enabled-automated-log-alerting.md)
   - [Penetration Test Remediation](penetration-test-remediation.md)
   - [Penetration Test Report](penetration-test-report.md)
-  - [System Description (Section III)](system-description.md)
