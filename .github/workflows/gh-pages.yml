@@ -15,10 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
-
-      - uses: jontze/action-mdbook@v2
+      - uses: jontze/action-mdbook@v3.0.0
         with:
           token: ${{secrets.GITHUB_TOKEN}}
           # Optional Plugins have to be enabled
@@ -46,7 +43,7 @@ jobs:
       - run: mdbook build
 
       - name: deploy
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v3.9.3
         if: ${{ github.ref == 'refs/heads/trunk' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
